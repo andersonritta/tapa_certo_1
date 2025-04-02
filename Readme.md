@@ -1,5 +1,5 @@
 # Página Inicial
-id_ profssional e id_sujeito_de_teste são 4 digitos 
+id_ profssional e id_sujeito_de_teste são obrigatoriamente 4 digitos 
 
 # Registro de Logs do Jogo "Tapa Certo"
 
