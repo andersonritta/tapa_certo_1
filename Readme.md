@@ -30,9 +30,8 @@ Os logs são armazenados em um arquivo CSV localizado no diretório de downloads
    - Valor fixo atribuído na variável `nome_jogo`.
 
 7. **Tempo_Resposta**: Tempo de resposta do jogador em segundos.
-   - O tempo de resposta é calculado como a diferença entre o instante em que o alvo foi apresentado (`tempo_alvo_apresentado`) e o instante exato do clique do jogador (`Time.get_ticks_msec()`).
-   - O valor obtido é inicialmente registrado em milissegundos e convertido para segundos dividindo por 1000.
-   - Esse cálculo é realizado na função `registrar_tempo_resposta()`, que é chamada logo após a detecção do clique do jogador.
+   - Representa o tempo decorrido desde o início do jogo até o momento em que o jogador toca na tela ou pressiona uma tecla.  
+   - Cálculo do Tempo de Resposta: `var tempo_resposta = Time.get_ticks_msec() / 1000.0`
 
 8. **Pontos**: Pontuação acumulada na sessão.
    - Atualizado na função `clique()`, somando 1 em caso de acerto e subtraindo 1 em caso de erro.
